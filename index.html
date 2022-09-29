@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;773;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="controls">
+            <div class="shapes">
+                
+                <h3>Shapes</h3>
+                <div class="rectangle">
+                    <!-- icon + text -->
+                    <p>Rectangle</p>
+                </div>
+                <div class="circle">
+                    <!-- icon + text -->
+                    
+                    <p>Circle</p>
+                    
+                </div>
+                <div class="triangle">
+                    
+                    <p>Triangle</p>
+                </div>
+                <div class="fill_color">
+                    
+                    <p>Fill color</p>
+
+                </div>
+                
+            </div>
+            
+            <div class="option" id = "option">
+                <h3>Options</h3>
+                <div class="brush selected">Brush</div>
+                <div class="eraser">Eraser</div>
+            </div>
+
+            <div class="slider">
+                <div class="text">
+
+                    <h3>Brush Size</h3>
+                    <p id = "slider_value">5</p>
+
+                </div>
+                <input type="range" id = "slider" min ="1" max ="10" step="1" >
+            </div>
+
+            <div class="colors">
+                <h3>Colors</h3>
+
+                <div class="inside_colors" id = "inside_colors">
+                    
+                    <input type="color" class = "colors1" value="#000000">
+                    <input type="color" class = "colors2 selected" value="#e61465">
+                    <input type="color" class = "colors3" value="#f66465">
+                    <input type="color" class = "colors4" value="#ffea00">
+                    <input type="color" class = "colors5" value="#29e6ff">
+        
+                </div>
+            </div>
+            
+            <div class="clear_canvas">
+                <button id = "clear_canvas">Clear Canvas</button>
+            </div>
+
+            <div class="save_image">
+
+                <button id="save_image">Save Image</button>
+            
+            </div>
+    
+        </div>
+    
+        <div class="canvas">
+            <canvas id = "my_canvas">
+
+
+            </canvas>
+        </div>
+        
+    </div>    
+</body>
+
+<script src="script.js"></script>
+</html>
+
